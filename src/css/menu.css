@@ -1,0 +1,61 @@
+.menu {
+  width: 40%;
+}
+.menu__logo > h4,
+h5 {
+  font-size: 0.9rem;
+}
+.menu__logo {
+  display: flex !important;
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(200, 66, 66);
+  border-radius: 30px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: white;
+  text-align: center;
+}
+.menu__choice > p {
+  color: red;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+.menu__choice {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu__image {
+  border-radius: 10px;
+}
+@media only screen and (max-width: 990px) {
+  .menu {
+    width: 100%;
+  }
+  .menu__cont {
+    display: flex;
+    align-items: center;
+  }
+  .menu__image {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .menu {
+    width: 50%;
+  }
+  .menu__cont {
+    display: none !important;
+  }
+  .menu__image {
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+  }
+}

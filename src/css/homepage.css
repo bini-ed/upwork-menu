@@ -1,0 +1,74 @@
+.homepage {
+  width: 100%;
+  height: 100vh;
+}
+.homepage__gradient {
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  background: linear-gradient(
+    to middle,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+@media only screen and (min-width: 991px) {
+  .homepage {
+    /* display: block !important; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: url("https://firebasestorage.googleapis.com/v0/b/tryshiftt.appspot.com/o/media%2FZGeLjYMNg3fNTcV6SaDfRrtU9pP2%2F1598526294511_euphoria.kw_92951393_254814942359695_3818074115001305559_n.jpg?alt=media&token=cfa27b9b-0342-4714-9958-647f220845e1")
+      center no-repeat;
+    background-size: cover;
+  }
+  .home__menu__cont {
+    display: flex !important;
+    flex-direction: column;
+    z-index: 100;
+    align-items: center;
+  }
+  .home__menu__logo {
+    display: flex;
+    font-size: 1rem;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    background-color: rgb(200, 66, 66);
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    text-align: center;
+  }
+  .homepage__header {
+    display: flex !important;
+    z-index: 100;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+  }
+  .homepage__header {
+    display: flex !important;
+    z-index: 100;
+    justify-content: center;
+    background-color: transparent;
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .homepage__header {
+    display: none;
+  }
+  .homepage__gradient {
+    display: none !important;
+  }
+}
